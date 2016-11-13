@@ -44,6 +44,9 @@ See this series of [wireframes][wireframes] illustrates the general implementati
 
 This project will be implemented with the following technologies:
 
+http://www.bfxr.net/
+
+
 - Vanilla JavaScript and `jquery` for overall structure and game logic,
 - `Easel.js` with `HTML5 Canvas` for DOM manipulation and rendering,
 - Webpack to bundle and serve up the various scripts.
