@@ -1,0 +1,23 @@
+@font-face { font-family: emulogic; src: url('assets/Font/emulogic.ttf'); }
+
+* {
+  font-family: Emulogic;
+  font-size: 48px; /* use multiples of 6 */
+  background-color: black;
+  color: white;
+}
+
+.red {
+  font-size: 18px;
+  color: red;
+}
+
+.blue {
+  font-size: 18px;
+  color: blue;
+}
+
+.green {
+  font-size: 18px;
+  color: green;
+}
