@@ -1,10 +1,9 @@
 ## Missile Command / Typing Education
 
-### Background
-
 [Type Command Live][TypeCommand]
-
 [TypeCommand]: http://www.david-mcafee.com/TypeCommand
+
+### Background
 
 Type Command is generally based on Atari's [Missile Command][MissileCommand], and Phoboslab's [ZType][Ztype]: the user's cities are attacked by dropping word "missiles" (some of which, like the original, can split into multiple missiles, here, individual letters). The user can attack these dropping missiles by typing the words they contain. As a user begins typing the word contained in a missile, the missile is selected and it's "health" is lowered as the user types the word. In addition, the momentum of the missile is lowered the more it is destroyed by the user (a common strategy later in the game, to slow down rapid missiles). To unselect a word, the user simply hits the delete/backspace key - this is important, as missiles will drop at varying speeds, and missiles will contain words or random strings that vary in typing difficulty. As the game progresses, more randomized string, strings of greater length, splitting words, and less common characters (i.e. "$", "&", "<") are introduced.
 
@@ -80,7 +79,5 @@ I plan to expand this game to include the following features:
 - [ ] Missile bases that fire bullets by the user, and  - can also be destroyed by "word missiles."
 - [ ] Alternate gameplay that involves dividing the screen into a grid, each box corresponding to a letter, with gameplay more akin to the original Missile Command.
 
-[Type Command Live][TypeCommand]
 [TypeCommand]: http://www.david-mcafee.com/TypeCommand
-[ZType][Ztype]
 [ZType]: http://zty.pe/
