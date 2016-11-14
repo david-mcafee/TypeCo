@@ -12,21 +12,22 @@ Should a missile hit the bottom of the screen, that specific city or missile bas
 
 Missile bases will be selected by typing the number corresponding to the base (learning to type numbers is important, too!).
 
-The full implementation of Type Command of this game is outlined in the **Functionality & MVP** and **Bonus Features** sections.  
+The full implementation details of Type Command--including what features constitute the minimum viable product, and what will be added later as bonus, are outlined in the **Functionality & MVP** and **Bonus Features** sections.
 
 ### Functionality & MVP  
 
-Users of Type Command will be able to:
-
-- [ ] Start, pause, and reset the game board
+Primary features:
+- [ ] Start and reset the game board
 - [ ] Select dropping missiles by typing their contained words
 - [ ] Deselect dropping missiles by typing delete/backspace
-- [ ] Toggle between missile bases by typing their corresponding numerical values
-- [ ] Choose difficulty levels
+
+Secondary features:
+- [ ] Bullets that correspond to keystrokes to delete letters
+- [ ] "Focus" words are highlighted
+- [ ] It is clear to the user how many letters in a word have been correctly typed (as designated with changing colors)
 
 In addition, this project will include:
-
-- [ ] An About modal describing the background and rules of the game
+- [ ] An "About" modal describing the background and rules of the game
 - [ ] A production README
 
 ### Wireframes
@@ -34,7 +35,7 @@ In addition, this project will include:
 This app will consist of a single screen with game board, game controls, and nav links to the Github, my LinkedIn,
 and the About modal.  Game controls will include Start, Stop, Reset, and the full keyboard by which to destroy missiles.
 
-See this series of [wireframes][wireframes] illustrates the general implementation details and styling of the game.
+General implementation details and styling of the game:
 
 ![wireframes](https://github.com/david-mcafee/TypeCommand/blob/master/docs/wireframes/mockup.png)
 
@@ -49,34 +50,35 @@ This project will be implemented with the following technologies:
 
 In addition to the webpack entry file, there will be several scripts involved in this project:
 
-`moving_object.js`: functions as the parent class to anything that moves on the screen.
-`missile.js`: inherit it's functionality from the MovingObject class - corresponds to a dictionary word.
-`bullet.js`: inherit it's functionality from the MovingObject class - creation corresponds to keyboard key stroke, deletion corresponds to collision with missile.
-`game_view.js`: handle the logic for creating and updating the canvas, and rendering them to the DOM.
-`game.js`: holds all the game logic, as well as the collections of objects (missiles, bullets, towers, and cities).
-`tower.js`: provides each missile tower's functionality (firing missiles, state).
-`city.js`: provide a city object, whose existence determines a piece of the user's score.
-`util.js`: deals with all logic related to object movement direction, rate, etc.
+- `moving_object.js`: functions as the parent class to anything that moves on the screen.
+- `missile.js`: inherit it's functionality from the MovingObject class - corresponds to a dictionary word.
+- `bullet.js`: inherit it's functionality from the MovingObject class - creation corresponds to keyboard key stroke, deletion corresponds to collision with missile.
+- `game_view.js`: handle the logic for creating and updating the canvas, and rendering them to the DOM.
+- `game.js`: holds all the game logic, as well as the collections of objects (missiles, bullets, towers, and cities).
+- `tower.js`: provides each missile tower's functionality (firing missiles, state).
+- `city.js`: provide a city object, whose existence determines a piece of the user's score.
+- `util.js`: deals with all logic related to object movement direction, rate, etc.
 
 
 ### Implementation Timeline
 
-**Day 1**: Setup all necessary Node modules, including getting webpack up and running. Create `webpack.config.js` as well as `package.json`. Write a basic entry file and the basics for the scripts outlined above. Game should have randomly chosen words "falling" vertically across the screen.
+**Day 1**: Setup all necessary Node modules, including getting webpack up and running. Create `webpack.config.js` as well as `package.json`. Write a basic entry file and the basics for the scripts outlined above. Game should have randomly chosen words "falling" vertically across the screen by the end of the day.
 
-**Day 2**: Register key stroke events from the user. When letter entered matches a current word, make that word the "focus" word. Backspace should remove this "focus."
+**Day 2**: Complete game logic today, and the primary features of the game. Register key stroke events from the user. When letter entered matches a current word, make that word the "focus" word. Backspace should remove this "focus" of the word. Delete "word missiles" when they have been completely typed. Ignore typos.
 
-**Day 3**:
+**Day 3**: Implement all secondary features. Highlight "focus" words. Make it clear to the user how many letters in a word have been correctly typed. Bullets are fired from bottom of screen that destroy typed letters
 
-**Day 4**: Style
+**Day 4**: Implement scoring system, style the game, and create a React modal for the "about" section. If time, implement bonus features.
 
 
 ### Bonus features
 
 I plan to expand this game to include the following features:
 
-- [ ] Alternate gameplay that involves dividing the screen into a grid and  
-- [ ] Add multiple choices for starting states that are interesting
-- [ ] Explore multi-state versions of the game, such as the ones outlined [here](https://cs.stanford.edu/people/eroberts/courses/soco/projects/2008-09/modeling-natural-systems/gameOfLife2.html)
+- [ ] The game should become harder with time - word length should increase, words should begin to fall at increasing speeds, and single words should split into individual letters.
+- [ ] Cities that can be destroyed when hit by missiles
+- [ ] Missile bases that fire bullets by the user, and  - can also be destroyed by "word missiles."
+- [ ] Alternate gameplay that involves dividing the screen into a grid, each box corresponding to a letter, with gameplay more akin to the original Missile Command.
 
 [Type Command Live][TypeCommand]
 [TypeCommand]: http://www.david-mcafee.com/TypeCommand
