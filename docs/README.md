@@ -36,7 +36,7 @@ and the About modal.  Game controls will include Start, Stop, Reset, and the ful
 
 General implementation details and styling of the game:
 
-![wireframes](http://github.com/david-mcafee/TypeCommand/blob/master/docs/wireframes/mockup.png)
+![wireframes](https://github.com/david-mcafee/TypeCommand/blob/master/docs/wireframes/mockup.png)
 
 ### Architecture and Technologies
 
