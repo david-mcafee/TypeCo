@@ -19,9 +19,23 @@
       ga('send', 'pageview');
     </script>
 
-    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+    <!-- <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+        <script>
+          function init() {
+            var stage = new createjs.Stage("demoCanvas");
+            var circle = new createjs.Shape();
+            circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 50);
+            circle.x = 100;
+            circle.y = 100;
+            stage.addChild(circle);
+            stage.update();
+          }
+        </script> -->
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
   </head>
+  <!-- onLoad="init();" -->
   <body>
     <!-- <header>
       <h1>Type Command</h1>
@@ -32,9 +46,9 @@
     <section>
 
     </section> -->
-    <canvas class="canvas" width="300" height="300"></canvas>
-
+    <canvas id="canvas" width="300" height="300">Alternative text</canvas>
     <script type="application/javascript" src="vendor/keymaster.js"></script>
     <script type="application/javascript" src="lib/bundle.js"></script>
+
   </body>
 </html>
