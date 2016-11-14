@@ -66,7 +66,7 @@ In addition to the webpack entry file, there will be several scripts involved in
 
 **Day 3**: Implement all secondary features. Highlight "focus" words. Make it clear to the user how many letters in a word have been correctly typed. Bullets are fired from bottom of screen that destroy typed letters
 
-**Day 4**: Implement scoring system, style the game, and create a React modal for the "about" section. If time, implement bonus features.
+**Day 4**: Implement scoring system, style the game, and create a React modal for the "about" section. Learn how to incorporate a dictionary into the game for supplying an extensive word list. If time, implement bonus features.
 
 
 ### Bonus features
