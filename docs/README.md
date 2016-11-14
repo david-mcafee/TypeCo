@@ -17,7 +17,7 @@ The full implementation details of Type Command--including what features constit
 
 Primary features:
 - [ ] Start and reset the game board
-- [ ] Select dropping missiles by typing their contained words
+- [ ] Select dropping missiles by typing their contained words.
 - [ ] Deselect dropping missiles by typing delete/backspace
 
 Secondary features:
