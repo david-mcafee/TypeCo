@@ -36,7 +36,7 @@ and the About modal.  Game controls will include Start, Stop, Reset, and the ful
 
 General implementation details and styling of the game:
 
-![wireframes](https://github.com/david-mcafee/TypeCommand/blob/master/docs/wireframes/mockup.png)
+![wireframes](http://github.com/david-mcafee/TypeCommand/blob/master/docs/wireframes/mockup.png)
 
 ### Architecture and Technologies
 
@@ -79,5 +79,6 @@ I plan to expand this game to include the following features:
 - [ ] Missile bases that fire bullets by the user, and  - can also be destroyed by "word missiles."
 - [ ] Alternate gameplay that involves dividing the screen into a grid, each box corresponding to a letter, with gameplay more akin to the original Missile Command.
 
+[MissileCommand]: http://en.wikipedia.org/wiki/Missile_Comman
 [TypeCommand]: http://www.david-mcafee.com/TypeCommand
 [ZType]: http://zty.pe/
