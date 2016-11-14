@@ -31,8 +31,7 @@ In addition, this project will include:
 
 ### Wireframes
 
-This app will consist of a single screen with game board, game controls, and nav links to the Github, my LinkedIn,
-and the About modal.  Game controls will include Start, Stop, Reset, and the full keyboard by which to destroy missiles.
+This app will consist of a single screen with a game board, game controls, and nav links to the "About" modal.  Game controls will include Start, Stop, Reset, and the full keyboard by which to destroy missiles.
 
 General implementation details and styling of the game:
 
