@@ -6,8 +6,8 @@ module.exports = {
   entry: "./lib/main.js",
   output: {
     // output path
-    path: path.join(__dirname, 'lib'),
-    filename: 'bundle.js'
+    path: path.join(__dirname, "lib"),
+    filename: "bundle.js",
   },
   module: {
     // configure module.loaders to use Babel transpilation for JSX and ES6
@@ -15,16 +15,16 @@ module.exports = {
       {
         test: [/\.jsx?$/, /\.js?$/],
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel',
+        loader: "babel",
         query: {
-          presets: ['es2015', 'react']
-        }
-      }
-    ]
+          presets: ["es2015", "react"],
+        },
+      },
+    ],
   },
   // include source-map devtool
-  devtool: 'source-maps',
+  devtool: "source-maps",
   resolve: {
-    extensions: ["", ".js", ".jsx" ]
-  }
+    extensions: ["", ".js", ".jsx"],
+  },
 };

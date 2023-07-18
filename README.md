@@ -20,10 +20,12 @@ Should a missile hit the bottom of the screen, that specific city or missile bas
 Missile bases will be selected by typing the number corresponding to the base (learning to type numbers is important, too!).
 
 ## Game Instructions:
+
 Word “missiles” are falling from the sky - your job is to type them before they hit the ground When you start typing a word, it will be selected. You must finish typing this word before it hits the ground. Once you select a word
 any typos will cost you points
 
 ## Technologies Used:
+
 HTML5 canvas
 Vanilla JavaScript
 
@@ -34,12 +36,12 @@ Vanilla JavaScript
 ```
 
 ## Bonus:
+
 - [ ] Vary word length based on difficulty, and increase velocity of falling words
 - [ ] Missile bases that fire bullets by the user, and can also be destroyed by "word missiles."
 
-
 ##### To see how I implemented this project from start to finish, see the complete Project Proposal README:
 
-* [docsREADME][docsREADME]
+- [docsREADME][docsREADME]
 
 [docsREADME]: docs/README.md
