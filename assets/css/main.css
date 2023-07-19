@@ -1,4 +1,7 @@
-@font-face { font-family: emulogic; src: url('../Font/emulogic.ttf'); }
+@font-face {
+  font-family: emulogic;
+  src: url("../Font/emulogic.ttf");
+}
 
 * {
   font-family: Emulogic;

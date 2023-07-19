@@ -13,25 +13,28 @@ Missile bases will be selected by typing the number corresponding to the base (l
 
 The full implementation details of Type Command--including what features constitute the minimum viable product, and what will be added later as bonus, are outlined in the **Functionality & MVP** and **Bonus Features** sections.
 
-### Functionality & MVP  
+### Functionality & MVP
 
 Primary features:
+
 - [ ] Start and reset the game board
 - [ ] Select dropping missiles by typing their contained words.
 - [ ] Deselect dropping missiles by typing delete/backspace
 
 Secondary features:
+
 - [ ] Bullets that correspond to keystrokes to delete letters
 - [ ] "Focus" words are highlighted
 - [ ] It is clear to the user how many letters in a word have been correctly typed (as designated with changing colors)
 
 In addition, this project will include:
+
 - [ ] An "About" modal describing the background and rules of the game
 - [ ] A production README
 
 ### Wireframes
 
-This app will consist of a single screen with a game board, game controls, and nav links to the "About" modal.  Game controls will include Start, Stop, Reset, and the full keyboard by which to destroy missiles.
+This app will consist of a single screen with a game board, game controls, and nav links to the "About" modal. Game controls will include Start, Stop, Reset, and the full keyboard by which to destroy missiles.
 
 General implementation details and styling of the game:
 
@@ -57,7 +60,6 @@ In addition to the webpack entry file, there will be several scripts involved in
 - `city.js`: provide a city object, whose existence determines a piece of the user's score.
 - `util.js`: deals with all logic related to object movement direction, rate, etc.
 
-
 ### Implementation Timeline
 
 **Day 1**: Setup all necessary Node modules, including getting webpack up and running. Create `webpack.config.js` as well as `package.json`. Write a basic entry file and the basics for the scripts outlined above. Game should have randomly chosen words "falling" vertically across the screen by the end of the day.
@@ -68,14 +70,13 @@ In addition to the webpack entry file, there will be several scripts involved in
 
 **Day 4**: Implement scoring system, style the game, and create a React modal for the "about" section. Learn how to incorporate a dictionary into the game for supplying an extensive word list. If time, implement bonus features.
 
-
 ### Bonus features
 
 I plan to expand this game to include the following features:
 
 - [ ] The game should become harder with time - word length should increase, words should begin to fall at increasing speeds, and single words should split into individual letters.
 - [ ] Cities that can be destroyed when hit by missiles
-- [ ] Missile bases that fire bullets by the user, and  - can also be destroyed by "word missiles."
+- [ ] Missile bases that fire bullets by the user, and - can also be destroyed by "word missiles."
 - [ ] Alternate gameplay that involves dividing the screen into a grid, each box corresponding to a letter, with gameplay more akin to the original Missile Command.
 
 [MissileCommand]: http://en.wikipedia.org/wiki/Missile_Comman
